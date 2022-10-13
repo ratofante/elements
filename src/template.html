@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon.png"
+			type="image/x-icon"
+		/>
+		<hero><%=htmlWebpackPlugin.options.hero %></hero>
+	</head>
+	<body>
+		<div class="cover-mask"></div>
+		<nav class="nav">
+			<div class="nav-logo">
+				<div class="logo"></div>
+			</div>
+			<div class="nav-headers">
+				<h5 class="nav-headers-text">Cold . Harsh . Blue</h5>
+			</div>
+			<div class="nav-menu">
+				<button class="menu-btn" type="button">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z"
+							fill="currentColor"
+						/>
+						<path
+							d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z"
+							fill="currentColor"
+						/>
+						<path
+							d="M5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11H5Z"
+							fill="currentColor"
+						/>
+					</svg>
+				</button>
+			</div>
+		</nav>
+		<div class="cover">
+			<div class="cover-text">
+				<h1 id="ice">ICE</h1>
+				<h4 id="cover-sub">Cold . Harsh . Blue</h4>
+			</div>
+		</div>
+
+		<div class="main-wrapper">
+			<section class="home" data-scroll-section>
+				<div class="hero home" data-scroll>
+					<h1 class="hero-title home" data-scroll>ICE</h1>
+					<div class="hero-frame home" data-scroll>
+						<img
+							data-scroll
+							class="hero-frame-img home"
+							src="./assets/tree-bg.jpg"
+							alt="Ice tree"
+						/>
+					</div>
+				</div>
+
+				<div class="home text-container">
+					<p class="home text">
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Possimus, molestiae. Amet sapiente autem debitis
+						consequuntur!
+					</p>
+					<p class="home text">
+						Rem sequi qui officiis laudantium possimus deleniti
+						neque sit a voluptatibus consequatur!
+					</p>
+				</div>
+
+				<div class="home ice-banner">
+					<img
+						data-scroll
+						src="./assets/winter.jpg"
+						alt="winter trees"
+						class="trees ice-banner-bg"
+					/>
+					<div class="ice-banner-dot"></div>
+					<h5 class="ice-banner-text">ICE</h5>
+				</div>
+
+				<!-- <div class="home-body" data-scroll>
+					<div class="home-body-img-bottom">
+						<img
+							data-scroll
+							src="./assets/montana.jpg"
+							alt=""
+							class="home-body-img-bottom-pic"
+						/>
+					</div>
+				</div> -->
+			</section>
+
+			<!-- <section class="cold" data-scroll-section>
+				<div class="cold-hero" data-scroll>
+					<h1
+						class="cold-hero-text"
+						data-scroll
+						data-scroll-speed="-2"
+					>
+						Cold
+					</h1>
+					<div class="cold-hero-img">
+						<img
+							class="cold-hero-img"
+							src="./assets/cold-bg.jpg"
+							alt="Glaciar"
+						/>
+					</div>
+				</div>
+				<div class="cold-text" data-scroll>
+					<p class="cold-text-p">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Deserunt porro minima asperiores.
+					</p>
+				</div>
+				<div class="cold-img" data-scroll>
+					<div class="cold-img-left">
+						<img src="./assets/cold-1.jpg" alt="winter trees" />
+					</div>
+					<div class="cold-img-right">
+						<img src="./assets/cold-2.jpg" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="harsh" data-scroll-section>
+				<div class="harsh-hero">
+					<h1
+						class="harsh-hero-text"
+						data-scroll=""
+						data-scroll-speed="1"
+					>
+						Harsh
+					</h1>
+					<div class="harsh-hero-img">
+						<img
+							class="harsh-hero-img"
+							src="./assets/harsh-bg.jpg"
+							alt="Glaciar"
+						/>
+					</div>
+				</div>
+				<div class="harsh-text">
+					<p class="harsh-text-p">
+						Eveniet, autem reiciendis excepturi explicabo non itaque
+						quae et deserunt? Molestias ea harum dicta magni
+						incidunt iste illum odio mollitia optio nobis.
+					</p>
+				</div>
+				<div class="harsh-img">
+					<div class="harsh-img-left">
+						<img src="./assets/harsh-1.jpg" alt="winter trees" />
+					</div>
+					<div class="harsh-img-right">
+						<img src="./assets/harsh-2.jpg" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="blue" data-scroll-section="">
+				<div class="blue-hero" data-scroll="">
+					<h1
+						class="blue-hero-text"
+						data-scroll=""
+						data-scroll-speed="2"
+					>
+						Blue
+					</h1>
+					<div class="blue-hero-img" data-scroll="">
+						<img
+							class="blue-hero-img"
+							data-scroll=""
+							src="./assets/blue-bg.jpg"
+							alt="Glaciar"
+						/>
+					</div>
+				</div>
+				<div class="blue-text" data-scroll="">
+					<p class="blue-text-p" data-scroll="">
+						Saepe, doloremque error! Fugiat, perferendis pariatur.
+						Animi, enim tenetur! Facilis, eum numquam.
+					</p>
+				</div>
+				<div class="blue-img" data-scroll="">
+					<div class="blue-img-left" data-scroll="">
+						<img
+							data-scroll=""
+							src="./assets/blue-1.jpg"
+							alt="winter trees"
+						/>
+					</div>
+					<div class="cold-img-right" data-scroll="">
+						<img data-scroll="" src="./assets/blue-2.jpg" alt="" />
+					</div>
+				</div>
+			</section> -->
+
+			<footer class="footer" data-scroll-section="">
+				<h2 class="footer-hero" data-scroll="">ICE</h2>
+			</footer>
+		</div>
+	</body>
+</html>

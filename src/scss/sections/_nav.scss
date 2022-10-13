@@ -1,0 +1,51 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	@include flex(row, center, space-between);
+	background-color: rgba(240, 248, 255, 0);
+	height: 45px;
+	width: 100%;
+	max-width: 100vw;
+	padding: 0px 20px;
+	margin: 10px 0px;
+
+	&-logo {
+		position: relative;
+		@include flex(row, center, center);
+		width: 35px;
+		border-radius: 50%;
+		aspect-ratio: 1;
+
+		& .logo {
+			position: absolute;
+			z-index: 1000;
+			top: max(34vh, 188px);
+			width: 35px;
+			border-radius: 50%;
+			aspect-ratio: 1;
+		}
+	}
+
+	&-headers {
+		&-text {
+			font-weight: $fw-light;
+			font-size: 18px;
+			margin-block: 0px;
+		}
+	}
+
+	&-menu {
+		@include flex(row, center, center);
+
+		& button {
+			width: 40px;
+			height: 40px;
+			padding: 0px;
+			border: none;
+			background: none;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.hero {
+	position: relative;
+
+	&-title {
+		position: absolute;
+		z-index: 100;
+		color: $clr-cyan;
+		font-size: clamp(120px, 38vw, 190px);
+		width: 100%;
+		text-align: center;
+		@include mq(sm) {
+			font-size: 260px;
+		}
+		@include mq(md) {
+			font-size: 300px;
+		}
+		@include mq(lg) {
+			font-size: 356px;
+		}
+		@include mq(xl) {
+			font-size: 420px;
+		}
+	}
+
+	&-frame {
+		width: 100%;
+		height: 420px;
+		margin: auto;
+		overflow: hidden;
+
+		@include mq(md) {
+			height: 640px;
+		}
+		@include mq(lg) {
+			height: 720px;
+		}
+		@include mq(xl) {
+			height: 800px;
+		}
+
+		&-img {
+		}
+	}
+}

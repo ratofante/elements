@@ -1,0 +1,21 @@
+section.home {
+	@extend .section;
+	margin-top: 100px;
+}
+
+.home.hero-frame-img {
+	//rango de 53px para moverse
+
+	position: relative;
+	left: -100px;
+	height: 575px;
+	object-position: left;
+
+	@include mq(md) {
+		left: 0px;
+	}
+
+	@include mq(lg) {
+		height: 100%;
+	}
+}

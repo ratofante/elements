@@ -1,0 +1,19 @@
+.ice-banner {
+	height: 200px;
+	overflow: hidden;
+
+	@include mq(sm) {
+		height: 240px;
+	}
+	@include mq(md) {
+		height: 265px;
+	}
+	@include mq(lg) {
+		height: 300px;
+	}
+	@include mq(xl) {
+		height: 400px;
+	}
+	&-bg {
+	}
+}

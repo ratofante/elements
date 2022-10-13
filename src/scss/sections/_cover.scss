@@ -1,0 +1,30 @@
+.cover {
+	position: absolute;
+	top: 0;
+	z-index: 200;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: $clr-blight;
+
+	&-text {
+		position: absolute;
+		top: 40%;
+		width: 100%;
+		color: $clr-white;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		& h1 {
+			font-size: 156px;
+			line-height: 80%;
+		}
+
+		& h4 {
+			margin-left: 8px;
+			font-size: 20px;
+		}
+	}
+}

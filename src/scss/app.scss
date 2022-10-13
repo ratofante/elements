@@ -1,0 +1,26 @@
+//General
+@import "./general/reset";
+@import "./general/breakpoints";
+@import "./general/variables";
+@import "./general/fonts";
+@import "./general/locomotive";
+@import "./general/mixins";
+@import "./general/animations";
+@import "./general/general";
+
+// Components
+@import "./components/hero";
+@import "./components/text-container";
+@import "./components/ice-banner";
+
+//Sections
+@import "./sections/cover-mask";
+@import "./sections/cover";
+@import "./sections/nav";
+
+@import "./sections/main-section";
+@import "./sections/home";
+@import "./sections/cold";
+@import "./sections/harsh";
+@import "./sections/blue";
+@import "./sections/footer";

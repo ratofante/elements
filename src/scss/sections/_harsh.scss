@@ -1,0 +1,60 @@
+.harsh {
+	@extend .section;
+
+	&-hero {
+		@extend .section-hero;
+
+		&-title {
+			@extend .section-hero-title;
+		}
+
+		&-img {
+			@extend .section-hero-img;
+
+			&-pic {
+				@extend .section-hero-img-pic;
+			}
+		}
+	}
+
+	&-text {
+		position: relative;
+		margin: 100px auto;
+		max-width: 250px;
+		left: -10vh;
+	}
+
+	&-img {
+		@include flex(column, center, center);
+		&-left {
+			order: 2;
+			position: relative;
+			z-index: 50;
+			align-self: flex-start;
+			width: 80vw;
+			max-width: 350px;
+			overflow: hidden;
+			height: 500px;
+
+			& img {
+				@include position-center;
+				max-width: none;
+				height: 100%;
+			}
+		}
+
+		&-right {
+			position: relative;
+			z-index: 50;
+			align-self: flex-end;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+
+			& img {
+				max-width: none;
+				@include position-center;
+			}
+		}
+	}
+}

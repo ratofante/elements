@@ -1,0 +1,25 @@
+@mixin flex($direction: row, $align: start, $justify: initial) {
+	display: flex;
+	flex-flow: $direction;
+	align-items: $align;
+	justify-content: $justify;
+}
+@mixin position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin btn-menu {
+	border: none;
+	width: clamp(15px, 2vw, 25px);
+	height: clamp(15px, 2vw, 25px);
+	background: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@mixin header-footer-spacing {
+	padding: 1.8rem 2rem;
+}

@@ -1,0 +1,22 @@
+@keyframes scaleDown {
+	from {
+		scale: 1;
+	}
+	to {
+		scale: 0;
+	}
+}
+.scaleDown {
+	animation: scaleDown 100ms linear forwards;
+}
+@keyframes scaleUp {
+	from {
+		scale: 0;
+	}
+	to {
+		scale: 1;
+	}
+}
+.scaleUp {
+	animation: scaleUp 100ms linear forwards;
+}
